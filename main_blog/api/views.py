@@ -7,3 +7,7 @@ from .serializers import PersonSerializer
 class PersonListView(generics.ListAPIView):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
+
+
+def test():
+    pass
