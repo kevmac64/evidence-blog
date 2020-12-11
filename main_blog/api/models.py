@@ -22,7 +22,7 @@ class Person(models.Model):
     def __str__(self):
         return f"{self.name} ({self.title})"
 
-"""
+
 class Evidence(models.Model):
     title = models.CharField(null=False, max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -36,6 +36,7 @@ class Evidence(models.Model):
         return f"{self.title} Sworn({self.sworn})"
 
 
+"""
 class Strand(models.Model):
     title = models.CharField(null=False, max_length=255)
     remarks = models.TextField()
